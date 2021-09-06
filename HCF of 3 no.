@@ -1,0 +1,31 @@
+ #include<iostream>
+using namespace std;
+int hcf(int, int, int);
+int main()
+{
+        int a,b,c;
+        int HCF;
+        cout<<"Enter 1st number: ";
+        cin>>a;
+        cout<<"Enter 2nd number: ";
+        cin>>b;
+        cout<<"Enter 3rd number: ";
+        cin>>c;
+        HCF = hcf(a,b,c);
+        cout<<"HCF of "<<a<<","<<b<<","<<c<<" is = "<<HCF<<endl;
+        return 0;
+}
+int hcf(int p, int q, int r)
+{
+        int gcf=1,flag=0, count;
+        for(count=1; flag==0;count++)
+        {
+                if(p%count==0&&q%count==0&&r%count==0)
+                        gcf=count;
+                if(count>p&&count>q&&count>r)
+                {
+                        flag=1;
+                }
+        }
+        return gcf;
+}
