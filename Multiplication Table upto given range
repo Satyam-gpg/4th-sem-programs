@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i,num,range;
+    cout<<"Enter the any number\n";
+    cin>>num;
+      cout<<"Enter the range\n";
+    cin>>range;
+    
+    for(i=1; i<=range; i++){
+        cout << num <<" * " << i<< " = "<<num*i<<endl;
+         
+    }
+    getch();
+    return 0;
+}
